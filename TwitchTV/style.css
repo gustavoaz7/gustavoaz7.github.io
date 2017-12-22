@@ -64,6 +64,12 @@ body{
   margin: 2%;
   box-shadow: 2px 2px 2px 2px #888;
 }
+#list>a>div>h3, #list>a>div>p {
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 150px;
+  text-overflow: ellipsis;
+}
 
 .logoimg {
   width: 60%; 
