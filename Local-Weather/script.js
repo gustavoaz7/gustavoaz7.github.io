@@ -120,7 +120,7 @@ function getAllData(){
 
         // Getting 5 Day Forecast
         let forecastURL = 
-          `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=${units}&APPID=${key}`;
+          `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=${units}&APPID=${key}`;
         return fetch(forecastURL);
       })
       .then(response => response.json())
