@@ -90,7 +90,7 @@ function getAllData(){
 
         // Getting Weather Information
         const weatherURL = 
-          `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}&APPID=${key}`;
+          `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}&APPID=${key}`;
         return fetch(weatherURL);
       })
     .then(response => response.json())
