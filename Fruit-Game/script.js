@@ -90,7 +90,7 @@ function pickFruit() {
 // Selecting a horizontally random position to place the fruit 
 function horizPosition() {
 	let area = game.getBoundingClientRect();
-	let item = fruit.getBoundingClientRect();
+	let item = document.querySelector('.fruit');
 	return Math.random()*(area.width - item.width);
 }
 

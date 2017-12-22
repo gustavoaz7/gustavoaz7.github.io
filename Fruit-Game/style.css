@@ -34,14 +34,17 @@ http://img3.wikia.nocookie.net/__cb39/fruitninja/images/5/50/Wiki-background
 }
 
 .fruit {
-	display:;
 	position: absolute;
+	max-height: 20vh;
+	max-width: 20vh;
+
 }
 
 #score {
 	position: absolute;
 	top: 4vh;
 	right: 3vw;
+	pointer-events: none;
 }
 
 #score span {
@@ -51,7 +54,8 @@ http://img3.wikia.nocookie.net/__cb39/fruitninja/images/5/50/Wiki-background
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: block;
-    line-height: 1;
+		line-height: 1;
+		text-align: center;
 }
 
 #bestScore {
@@ -65,6 +69,7 @@ http://img3.wikia.nocookie.net/__cb39/fruitninja/images/5/50/Wiki-background
 	height: 6vh;
 	padding: 1vh 1vw;
 	justify-content: space-between;
+	pointer-events: none;
 }
 
 #life img {
