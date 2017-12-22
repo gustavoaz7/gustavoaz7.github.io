@@ -14,14 +14,14 @@ const forecast = document.querySelector('.forecast')
 const weekday = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 // [iconClass, URL]
 const weather = {
-  'Thunderstorm': ['wi-thunderstorm', 'http://cdn.wallpapersafari.com/77/14/gq0rz6.jpg'],
-  'Drizzle': ['wi-sprinkle', 'https://images5.alphacoders.com/403/403926.jpg'],
-  'Rain': ['wi-rain', 'http://www.wallpaperawesome.com/wallpapers-awesome/wallpapers-weather-clouds-tornado-rain-cyclone-flashlights-awesome/wallpaper-drops-of-rain-from-sky-weather.jpg'],
-  'Snow': ['wi-snow', 'http://www.wallpaperawesome.com/wallpapers-awesome/wallpapers-weather-clouds-tornado-rain-cyclone-flashlights-awesome/wallpaper-snowing-in-the-trees-weather.jpg'],
-  'Atmosphere': ['wi-dust', 'https://i.pinimg.com/originals/79/5e/08/795e08ccde3b67f80119597d74fde0b1.jpg'],
-  '800': [['wi-day-sunny', 'https://sheridantower.files.wordpress.com/2012/05/clear-sky7.jpg'], ['wi-night-clear', 'https://www.walldevil.com/wallpapers/a57/sky-moon-night-star.jpg']],
+  'Thunderstorm': ['wi-thunderstorm', './img/thunderstorm.jpg'],
+  'Drizzle': ['wi-sprinkle', './img/drizzle.jpg'],
+  'Rain': ['wi-rain', './img/rain.jpg'],
+  'Snow': ['wi-snow', './img/snow.jpg'],
+  'Atmosphere': ['wi-dust', './img/atmosphere.jpg'],
+  '800': [['wi-day-sunny', './img/sunny.jpg'], ['wi-night-clear', './img/night.jpg']],
     // fc = few clouds
-  '8xx': {'fc': [['wi-day-cloudy', 'http://wpnature.com/wp-content/uploads/2017/04/natural-force-storm-sun-rays-new-york-rochester-clouds-beforethestorm-wallpaper-hd-1920x1080.jpg'], ['wi-night-alt-cloudy', 'http://eskipaper.com/images/night-clouds-moon-1.jpg']], 'other': ['wi-cloudy', 'http://www.footwa.com/wp-content/uploads/2010/05/Solitary-bird-in-the-sky.jpg']},
+  '8xx': {'fc': [['wi-day-cloudy', './img/cloudy-day.jpg'], ['wi-night-alt-cloudy', './img/cloudy-night.jpg']], 'other': ['wi-cloudy', './img/cloudy.jpg']},
   'xxx': ['wi-na', 'url']
 }
 
