@@ -1,0 +1,99 @@
+* {
+  padding:0; 
+  margin:0; 
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Open Sans' ,sans-serif;
+  color: #eee;
+}
+
+body { background: hsl(210, 39%, 15%) }
+
+#container {
+  width: 70%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+h1{
+  margin: 10% 0 30px 0;
+  font-style: italic;
+  text-shadow: 0px 0px 8px #888;
+  font-size: 2.4rem
+}
+
+#setup {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-row-gap: 30px;
+  justify-items: center;
+}
+
+#setup>div {
+  grid-column: span 2;
+  padding: 6px 0;
+  width: 100%;
+  border: 1px sold;
+}
+
+#vol { align-self:center }
+#vol>i { padding: 3px; }
+
+#session {
+  border: 2px solid rgba(249, 52, 54, 0.8);
+  border-radius: 5px;
+  box-shadow: 1px 2px 2px rgba(239, 72, 54, 0.5)
+}
+
+#rest {
+  border: 2px solid rgba(46, 204, 113, 0.9);
+  border-radius: 5px;
+  box-shadow: 1px 2px 2px rgba(66, 204, 113, 0.6)
+}
+
+#session>p, #rest>p {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+#session>span, #rest>span{ font-size: 1.5em }
+
+.changeTimeBtn { padding: 0 10% }
+.changeTimeBtn:hover { text-shadow: 0 0 6px #f5f5f5 }
+
+#reset { grid-column: 2 / span 2 !important }
+#play { grid-column: 4 / span 2 !important }
+
+#reset, #play {
+  border: 2px solid #eee;
+  border-radius: 3px;
+  color: #ccc;
+  max-width: 110px !important;
+  transition: all 0.1s ease;
+}
+#reset:active, #play:active {
+  transform: translate(1px, 2px);
+}
+#reset>::before, #play>::before { color: #ddd }
+#reset>i, #play>i { margin-right: 7px }
+
+.btn {
+  cursor: pointer;
+  user-select: none; /* Webkit for other browsers*/
+}
+
+#clock {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: 2px solid;
+}
+#display {
+    line-height: 150px;
+    font-size: 2.1em;
+}
+#timer {
+  line-height: 20px;
+  font-size: 2.5em;
+}

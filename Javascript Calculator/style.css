@@ -1,0 +1,138 @@
+* {
+  padding:0; 
+  margin:0; 
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(0,0,0, 0.88);
+}
+
+p { user-select: none }
+
+#calculator{
+  width: 350px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+#calculator>p {
+  justify-self: ceneter;
+  background: rgba(255, 255, 255, 0.15);
+  width: 100%;
+  padding: 5%;
+  cursor: pointer;
+  color: #eee;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  transition: all 0.1s ease;
+}
+#calculator>p:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+#calculator>p:active, #calculator>p.pressed {
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+}
+
+#calculator .number, #display {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+#display {
+  grid-column: 1 / 5;
+  font-size: 3em;
+  letter-spacing: 2;
+  padding: 0 5%;
+  overflow: hidden;
+  line-height: 80px;
+  height: 80px;
+  margin-bottom: 8px;
+  border-top: 2px solid green;
+  background: rgba(255, 255, 255, 0.08);
+  color: #eee;
+  text-align: right;
+}
+
+#calculator .operator {
+  background: rgba(175,255,175, 0.5);
+}
+#calculator .operator:hover {
+  background: rgba(175,255,175, 0.65);
+}
+#calculator .clear, #calculator .parC, #calculator .parO, #calculator .delete {
+  background: rgba(255,255,255, 0.4);
+}
+#calculator .clear:hover, #calculator .parC:hover, #calculator .parO:hover, #calculator .delete:hover {
+  background: rgba(255,255,255, 0.5);
+}
+
+#calculator .equal {
+  background: green;
+  text-shadow: 0 1px 2px rgba(0,0,0, 0.2);
+}
+#calculator .equal:hover {
+  background: rgba(0,200,0,0.8)
+}
+
+
+#obs {
+  grid-column: 1 / 5;
+  text-align: center;
+  margin-top: 5%;
+}
+#obs>p {
+  cursor: pointer;
+  background: rgba(0,0,0, 0.3);
+  display: inline;
+  border-radius: 50%;
+  padding: 2%;
+  color: #999;
+}
+
+#hid {
+  display: none;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  background: rgba(255,255,255, 0.1);
+  border-radius: 10px;
+  padding: 8px;
+  margin-top: 2%;
+}
+#hid>p {color: #ccc;}
+
+#obs>p:hover + #hid {
+  display: block;
+}
+#hid:hover { display: block; }
+
+@media only screen and (max-width: 600px) {
+  
+  #calculator{
+    width: 200px;
+    grid-row-gap: 3px;
+    grid-column-gap: 3px;
+  }
+
+  #calculator>p {
+    font-size: 20px;
+  }
+  
+  #display {
+    font-size: 1.8em;
+    letter-spacing: 1.4;
+    line-height: 55px;
+    height: 55px;
+    margin-bottom: 5px;
+  }
+  
+  #hid{
+    font-size: 0.85em;
+  }
+}

@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pomodoro Clock</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div id="container">
+      <h1>Pomodoro Clock</h1>
+      <div id="setup">
+        <div id="session">
+          <p>Session</p>
+          <span class="changeTimeBtn btn" id="minusS">-</span>
+          <span id="lenS">25</span>
+          <span class="changeTimeBtn btn" id="plusS">+</span>
+        </div>
+        <div id="vol"><i class="fa fa-volume-up btn"></i></div>
+        <div id="rest">
+          <p>Rest</p>
+          <span class="changeTimeBtn btn" id="minusR">-</span>
+          <span id="lenR">5</span>
+          <span class="changeTimeBtn btn" id="plusR">+</span>
+        </div>
+        <div class="btn" id="reset">
+          <i class="fa fa-undo"></i><span>Reset</span>
+        </div>
+        <div class="btn" id="play">
+          <i class="fa fa-play"></i><span>Play</span>
+        </div>
+      </div>
+      
+      <div id="clock">
+        <p id="display">Session</p>
+        <p id="timer">25:00</p>
+      </div>
+      
+      <audio id="timeupSound" src="https://www.dropbox.com/s/dsych8ixgtmb2nu/Fire_pager-jason-1283464858.mp3?dl=1"></audio>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

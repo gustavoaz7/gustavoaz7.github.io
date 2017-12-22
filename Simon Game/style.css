@@ -1,0 +1,186 @@
+h1, h3 { 
+  margin: 0;
+  display: inline-block;
+  font-family: 'Ubuntu', sans-serif;
+  color: #1a1a1a;
+}
+
+body { background: url("https://i.pinimg.com/originals/f9/9e/3b/f99e3b549a5a2ce49629154e1cb18e2c.jpg") }
+
+#container {
+position: relative;
+width: 530px;
+height: 530px;
+top: 50px;
+margin: 0 auto;
+background: #282828;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-gap: 20px 20px;
+border-radius: 50%;
+box-shadow: 0 0 13px 2px #111;
+}
+
+.colors {
+  width: 235px;
+  height: 235px;
+  box-shadow: inset 0px 0px 2px 1px rgba(0,0,0,.8), 
+              inset -3px -2px 8px 6px rgba(0,0,0,.3), 
+              inset 5px 5px 8px 5px rgba(255,255,255,.5);
+}
+
+.green { 
+  background: #149614;;
+  border-top-left-radius: 100%;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.green.active { background: rgb(49, 206, 41) }
+.red { 
+  background: rgb(189, 0, 0);
+  border-top-right-radius: 100%;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.red.active { background: rgba(255, 87, 87, 1) }
+.yellow { 
+  background: rgb(249, 191, 9);
+  border-bottom-left-radius: 100%;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.yellow.active { background: rgba(255, 249, 77, 1) }
+.blue { 
+  background: #0000bd;
+  border-bottom-right-radius: 100%;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.blue.active { background: rgb(0, 77, 255) }
+
+
+#center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 255px;
+  height: 255px;
+  border-radius: 50%;
+  background: #ddd;
+  box-shadow: 0 0 5px 19px #282828;
+  text-align: center;
+}
+
+#center>h1 {
+  margin-top: 20px;
+  font-size: 2.8em;
+  font-weight: 700;
+}
+
+#difficulty {
+  margin: 7px 0 14px 0;
+  padding: 0 15px;
+}
+input[type=radio] { display: none }
+label { 
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 5px 10px;
+  margin: 0 2px;
+  font-weight: 500;
+  line-height: 28px;
+  box-shadow: 0 0 2px 0 #333;
+  border-radius: 5px;
+}
+input[type=radio]:checked + label{
+  background: #282828;
+  color: #ddd;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 10px;
+}
+
+#counter {
+  padding: 0 10px;
+  height: 50px;
+}
+#counter>h1 {
+  color: #d00b0b;
+  font-size: 2em;
+  font-family: "Black Ops One";
+  width: 50px;
+  height: 37px;
+  background-color: #310008;
+  border: 4px solid #101010;
+  border-radius: 10px;
+}
+
+.btn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 4px solid #222;
+  margin: 0 auto;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+#start {
+  background: red;
+}
+
+#strict {
+  background: yellow;
+  position: relative;
+}
+#led {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: maroon;
+  border: 2px solid #333;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+#onoff {
+  margin-top: 20px;
+}
+#onoff>h3 {
+  vertical-align: top;
+  line-height: 20px;
+}
+
+#sw-area {
+  width: 40px;
+  height: 20px;
+  background: #101010;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+}
+#switch {
+  width: 16px;
+  height: 16px;
+  background: blue;
+  border: 2px solid #101010;
+  /*transition: 0.2s ease;  
+     transition was causing blur on entire #center */
+}
+
+
+@media screen and (max-width: 550px){
+  
+    #container {
+      transform: scale(0.6);
+      top: 30px;
+      transform-origin: 0 0;
+      margin-left: -160px;
+      left: 50%;
+    }
+  }

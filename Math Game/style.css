@@ -1,0 +1,144 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+p {color: #222; font-weight: 600; font-family: "Roboto";}
+
+body {
+	background-color: #1A5276;
+}
+
+#container {
+	background-color: rgba(247, 202, 24, 1);
+	box-shadow: 0 0 5px 3px #222;
+	height: 62vh;
+	width: 40vw;
+	border-radius: 5px;
+	margin: 0 auto;
+	margin-top: 20vh;
+	position: relative;
+}
+
+#score {
+	position: absolute;
+	top: 2vh;
+	right: 1vw;
+	background-color: rgba(243, 156, 18, 1);
+	border: 1px solid #222;
+	border-radius: 2px;
+	padding: 1vh 1vw;
+}
+
+#right {
+	position: absolute;
+	top: 2vh;
+	right: 44%;
+	background-color: rgba(41, 208, 27, 1);
+	border: 1px solid rgba(29, 165, 18, 1);
+	border-radius: 2px;
+	padding: 1vh 1vw;
+	visibility: hidden;
+}
+
+#wrong {
+	position: absolute;
+	top: 2vh;
+	right: 42%;
+	background-color: rgba(242, 38, 19, 1);
+	border: 1px solid rgba(207, 0, 15, 1);
+	border-radius: 2px;
+	padding: 1vh 1vw;
+	visibility: hidden;
+}
+
+#problem {
+	position: absolute;
+	top: 9vh;
+	height: 20vh;
+	width: 100%;
+	text-align: center;
+	line-height: 20vh;
+	font-size: 12vh;
+}
+
+#instruction {
+	position: absolute;
+	top: 31vh;
+	height: 8vh;
+	width: 100%;
+	background: rgba(243, 156, 18, 1);
+	border-top: 1px solid #222;
+	border-bottom: 1px solid #222;
+	text-align: center;
+	line-height: 8vh;
+}
+
+#answers {
+	position: absolute;
+	top: 41vh;
+	width: 100%;
+	height: 10vh;
+	display: flex;
+}
+
+.alt {
+	height: 10vh;
+	width: 20%;
+	border: 1px solid white;
+	flex: 1;
+	margin: 0 5%;
+	background: linear-gradient(rgba(171, 235, 198, 0.7),rgba(151, 215, 178, 0.6));
+	border: 1px solid #222;
+	cursor: pointer;
+	text-align: center;
+	line-height: 10vh;
+	font-size: 4vh;
+}
+
+.alt:hover {
+	background: rgba(191, 245, 218, 0.8);
+	box-shadow: 0 0 1px 1px #222;
+}
+
+#start {
+	position: absolute;
+	background-color: rgba(243, 156, 18, 1);
+	border: 1px solid #222;
+	border-radius: 2px;
+	padding: 1vh 1vw;
+	top: 54vh;
+	left: 40%;
+	cursor: pointer;
+}
+
+#start:hover {
+	background-color: rgba(248, 148, 6, 1);
+	box-shadow: 0 0  2px 1px #222;
+}
+
+#time {
+	position: absolute;
+	background-color: rgba(242, 38, 19, 0);
+	border: 1px solid rgba(207, 0, 15, 0);
+	border-radius: 2px;
+	padding: 1vh 1vw;
+	top: 54vh;
+	right: 1vw;
+	visibility: hidden;
+}
+
+#gameOver {
+	position: absolute;
+	background-color: rgba(248, 148, 6, 1);
+	border-top: 1px solid #222;
+	border-bottom: 1px solid #222;
+	font-size: 9vh;
+	width: 100%;
+	text-align: center;
+	line-height: 15vh;
+	top: 15vh;
+	visibility: hidden;
+}

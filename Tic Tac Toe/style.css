@@ -1,0 +1,115 @@
+body {
+  margin: 0 auto;
+  width: 80vw;
+  height: 100%;
+  margin-top: 1vh;
+  background: linear-gradient(45deg, rgba(12, 110, 193, 0.9) 0%,rgba(12, 110, 193, 0.7) 50%,rgba(12, 110, 193, 0.9) 100%);
+  background-size: cover;
+  color: #333;
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+}
+
+#container { 
+  position: relative; 
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 { 
+  font-size: 4em;
+  margin: 5px;
+}
+
+#board {
+  position: relative;
+  width: 355px;
+  height: 355px;
+  font-weight: 700;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  justify-items: center;
+}
+
+#board>span {
+  text-align: center;
+  font-size: 6em;
+  width: 1.2em;
+  height: 1.2em;
+  line-height: 1.3em;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 13px 5px rgb(46, 55, 97);
+  background: radial-gradient(rgba(30, 227, 91, 0.75), rgba(30, 227, 91, 0.9));
+  border-radius: 4px;
+}
+
+
+#boxes {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  z-index: 1;
+  display: none;
+}
+
+#selection, #gameOver {
+  text-align: center;
+  position: relative;
+  background-color: rgba(58, 65, 70, 0.85);
+  color: #ddd;
+  font-size: 1em;
+  padding: 30px;
+  display: block;
+}
+
+#gameOver { display: none; }
+
+.btn {
+  display: inline-block;
+  color: rgba(30, 227, 91, 0.9);
+  background-color: rgba(43, 41, 40, 0.8);
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  font-size: 3em;
+  margin: 0.2em 0.2em 0 0.2em;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: hsla(220, 8%, 39%, 0.8);
+}
+
+#gameOver span {
+  text-transform: uppercase;
+  font-size: 1.6em;
+  width: auto;
+  padding: 0.25em 0.4em;
+}
+
+#boxes h3 {
+  font-size: 1.6em;
+  font-family: cursive;
+  margin: 0 0 1em 0;
+  font-style: italic;
+}
+
+#footer {
+  position: relative;
+  font-family: cursive;
+  font-size: 1.3em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  max-width: 355px;
+  width: 100%;
+  margin: 10px auto;
+  padding: 0.6em 0;
+  box-shadow: inset 0px 0px 6px 2px rgba(36, 76, 101, 0.9);
+  border-radius: 4px;
+}

@@ -1,0 +1,136 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  background: #ffc600;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  font-family: 'Amatic SC', cursive;
+}
+
+body {
+  padding: 0;
+  margin:0;
+  position: relative;
+}
+
+h1 {
+  text-align: center;
+  font-size: 8rem;
+  line-height:1;
+  margin: 20px 0 0 0; 
+}
+
+.score {
+  background:rgba(255,255,255,0.2);
+  padding:0 3rem;
+  line-height:1;
+  border-radius:1rem;
+}
+
+h3 {
+  text-align: center;
+  font-size: 4rem;
+  line-height:1;
+  margin: 1.5rem 0 2.7rem 0;
+} 
+
+#options {
+  text-align: center;
+  position: relative;
+  transform: scale(1.5);
+  margin-bottom: 10px;
+}
+
+#options input {
+  width: 10rem;
+  text-align: center;
+}
+
+button {
+  font-weight: 600;
+  margin: 2px;
+}
+
+#error {
+  margin: 5px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  position: absolute;
+  top: 0;
+  left: 60%;
+  visibility: hidden;
+}
+
+#record {
+  position: absolute;
+  top: -2rem;
+  left: 32%;
+  transform: scale(0);
+  opacity: 0;
+  background: rgb(255, 218, 99);
+  padding:0 3rem;
+  line-height:1;
+  border-radius:1rem;
+  box-shadow: 1px 1px 3px 3px rgb(135, 103, 0);
+  font-style: italic;
+  transition: all 0.5s;
+}
+
+#record.active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.game {
+  width:600px;
+  height:350px;
+  display:flex;
+  flex-wrap:wrap;
+  margin:0 auto;
+}
+
+.hole {
+  flex: 1 0 33.33%;
+  overflow: hidden;
+  position: relative;
+}
+
+.hole:after {
+  display: block;
+  background: url(dirt.svg) bottom center no-repeat;
+  background-size:contain;
+  content:'';
+  width: 90%;
+  height:70px;
+  position: absolute;
+  z-index: 2;
+  bottom:-30px;
+}
+
+.mole {
+  background:url('mole.svg') bottom center no-repeat;
+  background-size:60%;
+  position: absolute;
+  top: 100%;
+  width: 90%;
+  height: 90%;
+  transition:all 0.3s;
+}
+
+.hole.up .mole {
+  top:10%;
+}
+
+.hole.up .mole:hover {
+  cursor: pointer;
+}
+
+.level button {
+  
+}
+
+.level button.active {
+  border: 2px;
+}

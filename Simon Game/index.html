@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Simon Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
+</head>
+<body>
+  
+<div id="container">
+  <div class="colors green" id="0"></div>
+  <div class="colors red" id="1"></div>
+  <div class="colors yellow" id="2"></div>
+  <div class="colors blue" id="3"></div> 
+  <div id="center">
+    <h1>Simon</h1>
+    <div id="difficulty">
+      <input type="radio" name="level" value="Easy" id="speed1" />
+      <label for="speed1">Easy</label>
+      <input type="radio" name="level" value="Medium" id="speed2" checked />
+      <label for="speed2">Medium</label>
+      <input type="radio" name="level" value="Hard" id="speed3" />
+      <label for="speed3">Hard</label>
+    </div>
+    <div class="options">
+      <div id="counter">
+        <h1></h1>
+      </div>
+      <div>
+        <div class="btn" id="start"></div>
+      </div>
+      <div>
+        <div class="btn" id="strict">
+            <div id="led"></div>
+        </div>
+      </div>
+    </div>
+    <div class="options">
+      <h3>Count</h3>
+      <h3>Start</h3>
+      <h3>Strict</h3>
+    </div>
+    <div id="onoff">
+      <h3>OFF</h3>
+      <div id="sw-area">
+        <div id="switch"></div>
+      </div>
+      <h3>ON</h3>
+    </div>
+  </div>
+</div>
+
+<audio class="0" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></audio>
+<audio class="1" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></audio>
+<audio class="2" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></audio>
+<audio class="3" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+p {
+	background: -webkit-linear-gradient( 90deg, #E80505,#E87E04, #F8D800, #FDEB71);
+	font-family: 'Sedgwick Ave Display', cursive;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body {
+	background: radial-gradient(#777, #444, #222);
+}
+
+/*		FRUIT NINJA BACKGROUND IMAGE
+http://img3.wikia.nocookie.net/__cb39/fruitninja/images/5/50/Wiki-background
+*/
+
+#game {
+	background: url('http://img3.wikia.nocookie.net/__cb39/fruitninja/images/5/50/Wiki-background') center;
+	background-size: cover;
+	box-shadow: 0 0 5px 3px #222;
+	height: 90vh;
+	width: 65vw;
+	border-radius: 5px;
+	margin: 0 auto;
+	margin-top: 5vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.fruit {
+	display:;
+	position: absolute;
+}
+
+#score {
+	position: absolute;
+	top: 4vh;
+	right: 3vw;
+}
+
+#score span {
+	font-size: 72px;
+    background: -webkit-linear-gradient( 90deg, #E80505,#E87E04, #F8D800, #FDEB71);
+	font-family: 'Sedgwick Ave Display', cursive;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: block;
+    line-height: 1;
+}
+
+#bestScore {
+	font-size: 28px !important;
+}
+
+#life {
+	position: absolute;
+	top: 3vh;
+	left: 4vw;
+	height: 6vh;
+	padding: 1vh 1vw;
+	justify-content: space-between;
+}
+
+#life img {
+	max-height: 5vh;
+	max-width: 5vh;
+	line-height: 6vh;
+	vertical-align: middle;
+	background: rgba(255, 0, 0, 0.25);
+	border-radius: 50%;
+	border: 1px solid rgba(255, 0, 0, 0.45);
+	margin: 1px;
+	padding: 0;
+}
+
+#instruction {
+	position: absolute;
+	bottom: 20vh;
+	height: 8vh;
+	width: 100%;
+	/*background: linear-gradient(#222,#333, #555, #777, #777, #555, #333, #222);*/
+	background: radial-gradient(#777, #666, #666, #555, #333, #222 ,transparent );
+	opacity: 0;
+	box-shadow: inset 0 0 3px 3px #222;
+	text-align: center;
+	font-size: 30px;
+	line-height: 8vh;
+}
+
+#instruction.active {
+	opacity: 0.95;
+}
+
+#start {
+	position: absolute;
+	background-color: ;
+	bottom: 4vh;
+	left: 39%;
+	cursor: pointer;
+	font-size: 40px;
+	border-bottom: 2px solid #E87E04;
+}
+
+#start.active {
+	transform: scale(0.5);
+	bottom: 0%;
+}
+
+#start:hover {
+	transform: scale(1.2);	
+}
+
+#gameOver {
+	position: absolute;
+	font-size: 10vh;
+	width: 100%;
+	text-align: center;
+	top: 25vh;
+	visibility: hidden;
+	opacity: 0.2;
+	transition: 0.5s;
+	transform: scale(0.4);
+}
+
+#gameOver.active {
+	visibility: visible;
+	transform: scale(1);
+	opacity: 1;
+}
+
+.go {
+	font-size: 15vh;
+	background: -webkit-linear-gradient( 90deg, #ff0000,#e84204, #f8a000, #fbc520);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

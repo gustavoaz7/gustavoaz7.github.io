@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Math Game</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+	
+	<div id="container">
+		<div id="score">
+			<p>Score: <span id="scoreValue"></span></p>
+		</div>
+		<div id="right">
+			<p>Correct</p>
+		</div>
+		<div id="wrong">
+			<p>Try Again</p>
+		</div>
+		<div id="problem">
+			<p>Math Game</p>
+		</div>
+		<div id="instruction">
+			<p>Select the correct answer</p>
+		</div>
+		<div id="answers">
+			<div class="alt" id="alt0"> <p>A</p> </div>
+			<div class="alt" id="alt1"> <p>B</p> </div>
+			<div class="alt" id="alt2"> <p>C</p> </div>
+			<div class="alt" id="alt3"> <p>D</p> </div>
+		</div>
+		<div id="start">
+			<p>Start Game</p>
+		</div>
+		<div id="time">
+			<p>Time remaining: <span id="timeRemain">60</span></p>
+		</div>
+		<div id="gameOver"> <p><bold>Game Over!</bold> <br /> Your score is: <span id="finalScore"></span></p></div>
+	</div>
+
+	<script src="script.js"></script>
+
+</body>
+</html>
