@@ -30,21 +30,26 @@
 
     // Initialize and Configure Scroll Reveal Animation
     window.sr = ScrollReveal();
-    sr.reveal('.sr-reveal', {
+    sr.reveal('.sr-reveal-left', {
+      origin: 'left',
+      distance: '100%',
+      duration: 600
+    });
+    sr.reveal('.sr-reveal-right', {
+      origin: 'right',
+      distance: '100%',
+      duration: 600
+    });
+    sr.reveal('.sr-reveal-skill', {
         duration: 600,
         scale: 0.3,
         distance: '0px'
     }, 200);
-    sr.reveal('.sr-reveal-left', {
-        origin: 'left',
-        distance: '100%',
-        duration: 600
-    });
-    sr.reveal('.sr-reveal-right', {
-        origin: 'right',
-        distance: '100%',
-        duration: 600
-    });
+    sr.reveal('.sr-reveal-contact', {
+      duration: 600,
+      scale: 0.3,
+      distance: '0px'
+    }, 200);
 
     // Initialize and Configure Magnific Popup Lightbox Plugin
     $('a.portfolio-box').magnificPopup({
@@ -62,21 +67,18 @@
         }
     });
 
-    // Set portfolio image
-    // document.querySelectorAll('.portfolio-box').forEach(function(box) {box.style.background = `no-repeat center url(${box.dataset.image})`})
 
-    //Typewrite config    
-    new Typewriter(document.querySelector('.typewriter'), {
-        loop: true
-    }).typeString('I am a self taught')
-        .pauseFor(1500)
-        .deleteChars(11)
-        .typeString('tech enthusiast')
-        .pauseFor(1500)
-        .deleteAll()
-        .typeString('and an aspiring full-stack web developer')
-        .pauseFor(2300)
-        .start();
+    // Typed config
+    new Typed(document.querySelector('.typed'), {
+      strings: ['I am a self taught', 'I am a tech enthusiast', 'and an aspiring full-stack web developer'],
+      loop: true,
+      startDelay: 1000,
+      typeSpeed: 15,
+      smartBackspace: true,
+      backDelay: 1500,
+      backSpeed: 10,
+      showCursor: false
+    })
 
         
     // Initialize Particles.js    

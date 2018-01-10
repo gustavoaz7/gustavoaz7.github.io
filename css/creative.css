@@ -3,6 +3,50 @@
  * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 html,
 body {
   height: 100%;
@@ -91,8 +135,11 @@ aside {
   color: #fff;
   transform: translateY(calc(-70%));
 }
-#home .intro .text .wrap {
-  border-right: 0.08em solid #fff;
+#home .intro .text .typed-cursor {
+  -webkit-animation: blink 0.8s infinite;
+  -moz-animation: blink 0.8s infinite;
+  -o-animation: blink 0.8s infinite;
+  animation: blink 0.8s infinite;
 }
 #home canvas {
   display: block;
