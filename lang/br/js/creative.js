@@ -71,9 +71,9 @@
     // Typed config
     new Typed(document.querySelector('.typed'), {
       strings: [
-        'I am a self taught', 
-        'I am a tech enthusiast', 
-        'and an aspiring full-stack web developer.',
+        'Eu sou autodidata', 
+        'Eu sou apaixonado por tecnologia', 
+        'e um futuro desenvolvedor web full-stack.',
         'Please scroll down &darr;'
       ],
       loop: true,

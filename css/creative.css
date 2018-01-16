@@ -101,6 +101,7 @@ p {
 }
 section {
   padding: 50px 0;
+  overflow-x: hidden;
 }
 aside {
   padding: 50px 0;
