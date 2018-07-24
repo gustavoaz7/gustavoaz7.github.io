@@ -73,7 +73,7 @@
       strings: [
         'I am a self taught', 
         'I am a tech enthusiast', 
-        'and an aspiring full-stack web developer.',
+        'and currently working as a React-Native Developer.',
         'Please scroll down &darr;'
       ],
       loop: true,
